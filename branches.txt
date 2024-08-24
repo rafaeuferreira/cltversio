@@ -1,0 +1,26 @@
+Branch de Desenvolvimento (develop)
+Descrição: A branch develop é onde as novas funcionalidades e correções são reunidas antes de serem lançadas.
+
+Branches de Funcionalidades (feature/*)
+Descrição: Cada nova funcionalidade ou melhoria é trabalhada em uma branch separada.
+
+Branches de Correção de Bugs (bugfix/*)
+Descrição: Usadas para corrigir problemas encontrados durante o desenvolvimento.
+
+Branches de Release (release/*)
+Descrição: Criadas quando o código está pronto para uma nova versão.
+
+
+
+Os comandos q eu usei:
+Git init: Começa um novo repositório Git no seu diretório atual.
+
+Git add: Prepara arquivos para serem salvos no repositório. Você seleciona quais arquivos você quer incluir nas suas próximas atualizações.
+
+Git commit: Salva as mudanças que você preparou no repositório local, criando um ponto de controle com uma descrição do que foi alterado.
+
+Git branch -M main: Muda o nome do branch atual para "main". Isso é útil se você quiser usar "main" como o nome principal do seu branch.
+
+Git remote add origin <URL>: Adiciona um link para um repositório remoto, permitindo que você envie suas mudanças para esse repositório na web.
+
+Git push -u origin main: Envia suas mudanças do branch "main" do seu repositório local para o repositório remoto chamado "origin" na web.

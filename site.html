@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</>
+    <title>CLT?</title>
+    <link href="./site.css" rel="stylesheet">
 </head>
 <body>
+    <h3>Controle de versão</h3>
+    <h6>Controle de versão é um sistema que registra alterações em um arquivo ou conjunto de arquivos ao longo do tempo para que você possa lembrar versões específicas mais tarde. Ele permite que você reverta para estado anterior determinados arquivos ou um projeto inteiro, compare as mudanças ao longo do tempo, veja quem modificou pela última vez algo que pode estar causando um problema, quem introduziu um problema, quando, e muito mais. 
+        Existem 3 tipos de controles de versão, são eles: 
+        Local: que é usado ainda em alguns computadores, como MAC. Em resumo, o próprio computador vai salvando versões de diferentes arquivos, servindo como um backup. A desvantagem é que se der problema na máquina, você perde tudo e fica restrito à dimensão do software, como é loca, não tem várias features que têm nos demais.
+        Centralizado: O centralizado é utilizado ainda em várias empresas, onde várias pessoas acessam o servidor que detem essas versões, servindo como um "mega" backup. No entanto, se der problema no servidor, todos os colaboradores saem do ar, e pior, pode perder todo o backup feito por se concentrar em um local só.
+        Distribuído: Por outro lado, quando é utilizado o distríbuído, no caso do git. Várias pessoas tem esses backups, várias máquinas tem acesso e diminui muito a chance do arquivo "sumir", além de que todos podem acessar remotamente o servidor e trabalharem juntos, como o centralizado.
+    </h6>
     
+    <h3>Controle de Mudanças</h3>
+    <h6>Controle de mudanças é uma prática essencial para qualquer projeto de software ou documento que passe por atualizações e revisões frequentes. Imagine que você está trabalhando em um documento importante, e de repente, precisa alterar algumas seções, adicionar novas informações ou corrigir erros. O controle de mudanças garante que todas essas alterações sejam registradas e acompanhadas ao longo do tempo. 
+
+        No universo do Git e de outros sistemas de controle de versão, isso significa que cada alteração feita no projeto é registrada em um "commit". Um commit é como uma foto instantânea do estado do seu projeto em um momento específico. Cada commit é identificado por um código único e contém uma mensagem que descreve o que foi alterado. Isso facilita muito a vida dos desenvolvedores, pois eles podem voltar no tempo e ver exatamente como o projeto estava em qualquer ponto da sua história.
+
+        Esse processo não só ajuda a entender o que mudou e por quê, mas também permite desfazer mudanças indesejadas ou corrigir problemas que surgiram em versões posteriores. Além disso, ao usar mensagens de commit claras e informativas, você cria um histórico que pode ser muito útil para a equipe, facilitando a comunicação e a colaboração. É como ter um diário que registra todas as melhorias e correções feitas no seu projeto.</h6>
+    
+    <h3>Integração Contínua</h3>
+    <h6>Integração Contínua (CI) é uma prática que tem se tornado cada vez mais popular no desenvolvimento de software. A ideia central é bastante simples, mas poderosa: a equipe de desenvolvimento integra suas mudanças no código várias vezes ao dia. Parece intenso, não é? Mas é exatamente isso que ajuda a manter a qualidade do software e evita aqueles pesadelos de integração no final de um ciclo de desenvolvimento.
+
+        Cada vez que um desenvolvedor faz uma alteração, essa mudança é automaticamente testada e verificada. Isso é feito através de uma construção automatizada e execução de testes, muitas vezes usando ferramentas como Jenkins, Travis CI ou GitHub Actions. Essas ferramentas fazem o trabalho pesado de construir o projeto e rodar os testes sempre que há uma nova atualização. Se algo estiver errado, os desenvolvedores são notificados imediatamente.
+
+        O grande benefício da integração contínua é que ela detecta problemas muito cedo no processo de desenvolvimento, quando é mais fácil e barato corrigir. Em vez de esperar até que o software esteja quase pronto para descobrir que algo deu errado, a CI ajuda a identificar e resolver problemas à medida que eles surgem. Isso não só melhora a qualidade do software, mas também acelera o ciclo de desenvolvimento, permitindo uma entrega mais rápida e eficiente dos produtos. É como ter uma equipe de detetives sempre à disposição, garantindo que cada parte do projeto esteja funcionando perfeitamente antes de avançar para a próxima etapa.</h6>
+
+    <section id="contador" class="my-5">
+        <h2>O senhor lançou essa atividade há exatos ☺ ↓↓↓↓</h2>
+        <p id="contador-segundos">Calculando...</p>
+    </section>
+
 </body>
+<script>
+    function atualizarContador() {
+        const upload = new Date('2024-08-23T20:50:00');
+        const agora = new Date();
+        const segundos = Math.floor((agora - upload) / 1000);
+        document.getElementById('contador-segundos').textContent = `${segundos.toLocaleString()} segundos`;
+    }
+    setInterval(atualizarContador, 1000);
+    atualizarContador(); 
+</script>
 </html>
